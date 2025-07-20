@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="scoreboard">
+            <span id="playerXName">X</span>: <span id="scoreX">0</span>
+            &nbsp;|&nbsp;
+            <span id="playerOName">O</span>: <span id="scoreO">0</span>
+            &nbsp;|&nbsp;
+            Draws: <span id="scoreDraw">0</span>
+        </div>
+        <button id="theme-toggle">Switch Theme</button>
+        <div id="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <svg id="win-line" width="260" height="260"></svg>
+        </div>
+        <div id="status"></div>
+        <button id="reset">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
